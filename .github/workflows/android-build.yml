@@ -29,6 +29,7 @@ jobs:
     - name: Build Debug APK
       uses: gradle/actions/setup-gradle@v3
       with:
+        gradle-version: '8.7'
         arguments: assembleDebug
 
     - name: Upload APK
