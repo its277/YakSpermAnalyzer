@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.YakSpermAnalyzer" parent="android:Theme.Material.NoTitleBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="Theme.YakSpermAnalyzer.SplashTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#07111F</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_dna_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.YakSpermAnalyzer</item>
+    </style>
+</resources>
