@@ -40,12 +40,12 @@ class AppPreferences @Inject constructor(
     // ── Flows ─────────────────────────────────────────────────────────────────
     val institutionName: Flow<String> = ds.data.map { it[Keys.INSTITUTION_NAME] ?: "Research Institute" }
     val reportFooter:    Flow<String> = ds.data.map { it[Keys.REPORT_FOOTER]    ?: "For research use only." }
-    val includeLogo:     Flow<Boolean>= ds.data.map { it[Keys.INCLUDE_LOGO]     ?: true }
+    val includeLogo:     Flow<Boolean> = ds.data.map { it[Keys.INCLUDE_LOGO]     ?: true }
     val pixelToUm:       Flow<Float>  = ds.data.map { it[Keys.PIXEL_TO_UM]      ?: Constants.PIXEL_TO_UM }
     val confidenceThresh:Flow<Float>  = ds.data.map { it[Keys.CONFIDENCE_THRESH]?: Constants.CONFIDENCE_THRESHOLD }
     val iouThresh:       Flow<Float>  = ds.data.map { it[Keys.IOU_THRESH]       ?: Constants.IOU_THRESHOLD }
     val minTrackLength:  Flow<Int>    = ds.data.map { it[Keys.MIN_TRACK_LENGTH]  ?: Constants.MIN_TRACK_LENGTH }
-    val frameEnhancement:Flow<Boolean>= ds.data.map { it[Keys.FRAME_ENHANCEMENT]?: true }
+    val frameEnhancement:Flow<Boolean> = ds.data.map { it[Keys.FRAME_ENHANCEMENT]?: true }
     val objective:       Flow<String> = ds.data.map { it[Keys.OBJECTIVE]         ?: "10×" }
 
     // ── Setters ───────────────────────────────────────────────────────────────
