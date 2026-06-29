@@ -165,8 +165,8 @@ fun ProcessingScreen(
                 .border(1.dp, Border, RoundedCornerShape(14.dp))
         ) {
             if (currentBitmap != null) {
-                androidx.compose.foundation.Image(
-                    bitmap = androidx.compose.ui.graphics.asImageBitmap(currentBitmap),
+                Image(
+                    bitmap = currentBitmap.asImageBitmap(),
                     contentDescription = "Frame preview",
                     modifier = Modifier.fillMaxSize()
                 )
